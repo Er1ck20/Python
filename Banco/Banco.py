@@ -4,13 +4,13 @@ class Banco:
 
     # Metodo de clase
     @classmethod
-    def contador_banco(cls):
+    def contadorID(cls):
         cls.contador += 1
         return cls.contador
-        
+
     # Metodo Init
     def __init__(self, nombre, cedula):
-        self.ID = Banco.contador_banco()
+        self.ID = Banco.contadorID()
         self.__nombre = nombre
         self.cedula = cedula
         self.__cantidad = 10000
@@ -24,6 +24,7 @@ class Banco:
     def cantidad(self):
         return self.__cantidad
     
+    # Metodo SET
     @nombre.setter
     def nombre(self, nombre):
         self.__nombre = nombre
