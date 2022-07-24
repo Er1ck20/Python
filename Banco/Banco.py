@@ -1,6 +1,16 @@
 class Banco:
+    # Variable de clase
+    contador = 0
+
+    # Metodo de clase
+    @classmethod
+    def contador_banco(cls):
+        cls.contador += 1
+        return cls.contador
+        
     # Metodo Init
     def __init__(self, nombre, cedula):
+        self.ID = Banco.contador_banco()
         self.__nombre = nombre
         self.cedula = cedula
         self.__cantidad = 10000
@@ -42,7 +52,7 @@ class Banco:
     def __str__(self):
         print('INFORMACION DEL CLIENTE'.center(50, '*'))
         
-        return f'NOMBRE: {self.nombre} \nCEDULA: {self.cedula} \nTOTAL EFECTIVO: {self.cantidad}'
+        return f'ID: {self.ID} | NOMBRE: {self.nombre} \nCEDULA: {self.cedula} \nTOTAL EFECTIVO: {self.cantidad}'
 
 if __name__ == '__main__':
 
@@ -54,7 +64,7 @@ if __name__ == '__main__':
     
     print(f'CUENTA ACTUALIZADA: {Cliente1}')
 
-    Cliente2 = Banco('Aldrick')
+    Cliente2 = Banco('Aldrick', 302)
     print(Cliente2)
     Cliente2.retirar()
     print(f'Cuenta actualizada: {Cliente2}')
