@@ -11,6 +11,7 @@ while Menu != 4:
             os.system('cls')
 
         Menu = int(input('1. Depositar Efectivo \n2. Retirar Efectivo \n3. Ver Total \n4. Salir \nSeleccionar(1-4): '))
+        
         limpiar()
         if Menu == 1:
             nombre = input('Ingrese su nombre: ')
