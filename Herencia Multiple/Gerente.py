@@ -33,5 +33,5 @@ class Gerente(Datos):
 
 
 if __name__ == '__main__':
-    ok = Gerente('Erick', 'Colon', 22, '21,000', 'Centra', 'Santo Domingo')
+    ok = Gerente('Erick', 'P', 23, '21,000', 'Principal', 'SD')
     print(ok)
