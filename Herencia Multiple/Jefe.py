@@ -56,5 +56,5 @@ class Datos:
 
 
 if __name__ == '__main__':
-    Jefe1 = Datos('Erick', 'Colon', '22', '21,000')
+    Jefe1 = Datos('Erick', 'P', '23', '21,000')
     print(Jefe1)
