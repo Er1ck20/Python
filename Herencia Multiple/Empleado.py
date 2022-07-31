@@ -23,5 +23,5 @@ class Empleado(Datos):
 
 
 if __name__ == '__main__':
-    Empleado1 = Empleado('Erick', 'Colon', 22, '23,000', 'Santo Domingo Este / Calle Mirador #9')
+    Empleado1 = Empleado('Erick', 'P', 23, '23,000', 'SD / Calle Ejemplo #1023')
     print(Empleado1)
