@@ -4,9 +4,11 @@ Conexion = db.connect(user='postgres', password='admin20', host='127.0.0.1', por
 
 try:
     with Conexion as CON:
-        with Conexion.cursor() as CURSOR:
+        with CON.cursor() as CURSOR:
             sentencia = 'DELETE FROM Estudiantes where id_estudiantes = %s'
-            valores = (1)
+
+            valores = (2, )
+
             CURSOR.execute(sentencia, valores)
             registro = CURSOR.rowcount
             print(f'Registro Eliminado: {registro}')
