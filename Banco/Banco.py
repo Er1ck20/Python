@@ -2,7 +2,7 @@ class Banco:
     # Variable de clase
     contador = 0
 
-    # Metodo de clase
+    # Metodo de clase - Contador
     @classmethod
     def contadorID(cls):
         cls.contador += 1
