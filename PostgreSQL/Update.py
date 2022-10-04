@@ -4,8 +4,8 @@ Conexion = db.connect(user='postgres', password='admin20', host='127.0.0.1', por
 
 try:
     with Conexion as CON:
-        with Conexion.cursor() as CURSOR:
-            sentencia = 'UPDATE ESTUDIANTES Set nombre = %s, apellido = %s, email = %s, edad = %s WHERE id_estudiante = %s'
+        with CON.cursor() as CURSOR:
+            sentencia = 'UPDATE ESTUDIANTES Set nombre = %s, apellido = %s, email = %s, edad = %s, telefono = %s WHERE id_estudiante = %s'
             valores = ('Enrique', 'PC', 'Actualiza@prueba.com', 24, 1)
             CURSOR.execute(sentencia, valores)
             registro = CURSOR.rowcount
