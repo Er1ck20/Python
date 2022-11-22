@@ -44,7 +44,7 @@ class Producto:
     def calcular_total(self):
         cantidad = int(input('Proporcione la cantidad: '))
         r = (cantidad * self.precio)
-        print(f'PRODUCTO: {self.nombre} | CANTIDAD: {cantidad} | PRECIO: {self.precio} | TOTAL: {r}')
+        print(f'CODIGO: {self.codigo} | PRODUCTO: {self.nombre} | CANTIDAD: {cantidad} | PRECIO: {self.precio} | TOTAL: {r}')
 
 
 if __name__ == '__main__':
