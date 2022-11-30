@@ -1,4 +1,4 @@
-# Pide un numero por teclado y guarda en una lista su tabla de multiplicar hasta el 10. Por ejemplo, si pide el 5 la lista tendrá
+# Pide un numero por teclado y guarda en una lista su tabla de multiplicar.
 
 num = int(input('Proporcione un numero: '))
 
