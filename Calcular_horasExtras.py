@@ -15,7 +15,7 @@ while menu != 4:
             print(f'HORAS EXTRAS'.center(50, '-'))
             horas = int(input('Horas trabajadas: ')) 
             if horas > 30:
-                print(f'Usted se ha excedido de horas extras permitidas, solo se le pagaran 30 que es el maximo estimado.')
+                print(f'Usted se ha excedido del maximo de horas extras permitidas, solo se le pagaran 30 que es el maximo estimado.')
                 horas = 30
                 PAGO = 116
                 r = (horas * PAGO)
@@ -43,7 +43,7 @@ while menu != 4:
             print(f'HORAS EXTRAS'.center(50, '-'))
             horas = int(input('Horas trabajadas: ')) 
             if horas > 30:
-                print(f'Usted se ha excedido de horas extras permitidas, solo se le pagaran 30 que es el maximo estimado.')
+                print(f'Usted se ha excedido del maximo de horas extras permitidas, solo se le pagaran 30 que es el maximo estimado.')
                 horas = 30
                 PAGO = 150
                 r = (horas * PAGO)
