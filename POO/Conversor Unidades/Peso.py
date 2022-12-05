@@ -25,21 +25,21 @@ class Peso:
         # 1 onza = 28.35 gramos
         y =  28.35
         r = (self.x * y)
-        print(f'{self.x} onza = {r} gramos')
+        print(f'{self.x} onza = {r:.2f} gramos')
     
     # Metodo para convertir de libra a kilogramos
     def conversion_libra(self):
         # 1 libra = 0.45359 kilogramos
         y =  0.45359
         r = (self.x * y)
-        print(f'{self.x} libra = {r} kilogramos')
+        print(f'{self.x} libra = {r:.2f} kilogramos')
     
     # Metodo para convertir de tonelada inglesa a toneladas
     def conversion_toneladaI(self):
         # 1 tonelada inglesa = 1.060 toneladas
         y =  1.060
         r = (self.x * y)
-        print(f'{self.x} libra = {r} kilogramos')
+        print(f'{self.x} libra = {r:.2f} kilogramos')
     
 
     

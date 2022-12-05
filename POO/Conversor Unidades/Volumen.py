@@ -29,28 +29,28 @@ class Volumen:
         # 1 pie^3 = 0.02832 metros^3
         y = 0.02832
         r = (self.x * y)
-        print(f'{self.x} pie^3 es igual a: {r} metros ^3')
+        print(f'{self.x} pie^3 = {r} metros ^3')
     
     # Metodo para convertir yarda^3 a metros^#
     def conversion_yarda3(self):
         # 1 yarda^3 = 0.7646 metros ^3
         y = 0.7646 
         r = (self.x * y)
-        print(f'{self.x} yarda^3 es igual a: {r} metros ^3')
+        print(f'{self.x} yarda^3 = {r} metros ^3')
     
     # Metodo para convertir 1 pinta a litros
     def conversion_pinta(self):
         # 1 pinta = 0.56826 litros
         y = 0.56826 
         r = (self.x * y)
-        print(f'{self.x} pintas es igual a: {r} litros')
+        print(f'{self.x} pintas = {r} litros')
     
     # Metodo para convertir 1 galon a litros
     def conversion_galon(self):
         # 1 galon = 4.54609 litros
         y = 4.54609
         r = (self.x * y)
-        print(f'{self.x} galones es igual a: {r} litros')
+        print(f'{self.x} galones = {r} litros')
 
 if __name__ == '__main__':
     v = Volumen(23)
