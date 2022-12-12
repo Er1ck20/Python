@@ -17,3 +17,11 @@ elif divisa == 'Yen':
 
 else:
     print(f'No proporciono ninguna divisa')
+
+
+# Otra forma de hacerlo.
+
+divisa2 = input('Que divisa desea ver? ')
+# title() - Devolvera la primera palabra de cada oracion en mayuscula.
+divisa2 = divisa2.title()
+print(dic[divisa2])
